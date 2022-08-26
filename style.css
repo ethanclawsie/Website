@@ -11,6 +11,12 @@
   a {
     background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(91, 91, 91));
   }
+  .text {
+    color: rgb(0, 0, 0);
+  }
+  .overlay {
+    background-color: #fff;
+  }
 }
 @media (prefers-color-scheme: dark) {
   body {
@@ -24,6 +30,12 @@
   }
   a {
     background: -webkit-linear-gradient(#eee, rgb(181, 181, 181));
+  }
+  .text {
+    color: white;
+  }
+  .overlay {
+    background-color: #0f0f10;
   }
 }
 
@@ -134,7 +146,6 @@ h2 {
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: #0f0f10;
 }
 
 .img-overlay:hover .overlay {
@@ -144,7 +155,6 @@ h2 {
 .text {
   font-family: "Roboto Mono", monospace;
   text-decoration: underline;
-  color: white;
   font-size: 1rem;
   position: absolute;
   top: 50%;
