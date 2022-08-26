@@ -1,0 +1,155 @@
+@media (prefers-color-scheme: light) {
+  body {
+    background: #fff;
+  }
+  h1 {
+    background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(122, 122, 122));
+  }
+  h2 {
+    background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(91, 91, 91));
+  }
+  a {
+    background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(91, 91, 91));
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #0f0f10;
+  }
+  h1 {
+    background: -webkit-linear-gradient(#eee, rgb(144, 144, 144));
+  }
+  h2 {
+    background: -webkit-linear-gradient(#eee, rgb(181, 181, 181));
+  }
+  a {
+    background: -webkit-linear-gradient(#eee, rgb(181, 181, 181));
+  }
+}
+
+h1 {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Syne", sans-serif;
+  text-align: center;
+}
+
+h2 {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+}
+
+.githubsmall {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+}
+
+.intro {
+  font-size: 8rem;
+  display: inline-block;
+  margin-top: 1.5em;
+}
+
+.about {
+  font-size: 6rem;
+  display: inline-block;
+  margin-top: 2.7em;
+}
+
+.abouttext {
+  font-size: 4.5rem;
+  display: inline-block;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.projects {
+  font-size: 6rem;
+  display: inline-block;
+  margin-top: 2.4em;
+}
+
+.more {
+  font-size: 0.8em;
+  display: inline-block;
+}
+
+.connect {
+  font-size: 6rem;
+  display: inline-block;
+  margin-top: 1.8em;
+}
+
+.container {
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+.github {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  margin-right: 0.5em;
+}
+
+.linkedin {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  margin-left: 0.5em;
+}
+
+/*Project Image CSS*/
+
+.screenshot {
+  height: auto;
+  width: auto;
+  max-width: 19em;
+  max-height: 19em;
+  border-radius: 0.5em;
+}
+
+.img-overlay {
+  border-radius: 0.5em;
+  position: relative;
+  width: 19em;
+  margin: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #0f0f10;
+}
+
+.img-overlay:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  font-family: "Roboto Mono", monospace;
+  text-decoration: underline;
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
