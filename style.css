@@ -61,43 +61,49 @@ h2 {
 }
 
 .intro {
-  font-size: 8rem;
+  font-size: 7vw;
+  font-size: 18vh;
   display: inline-block;
-  margin-top: 1.5em;
+  margin-top: 14%;
 }
 
 .about {
-  font-size: 6rem;
+  font-size: 13.5vw;
+  font-size: 13.5vh;
   display: inline-block;
-  margin-top: 2.7em;
+  margin-top: 18%;
 }
 
 .abouttext {
-  font-size: 4.5rem;
+  font-size: 10.2vw;
+  font-size: 10.2vh;
   display: inline-block;
-  margin-left: 2em;
-  margin-right: 2em;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .projects {
-  font-size: 6rem;
+  font-size: 13.5vw;
+  font-size: 13.5vh;
   display: inline-block;
-  margin-top: 2.4em;
+  margin-top: 16%;
 }
 
 .more {
-  font-size: 0.8em;
+  font-size: 2.7vw;
+  font-size: 2.7vh;
   display: inline-block;
 }
 
 .connect {
-  font-size: 6rem;
+  font-size: 13.5vw;
+  font-size: 13.5vh;
   display: inline-block;
-  margin-top: 1.8em;
+  margin-top: 16%;
 }
 
 .container {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.75%;
   text-align: center;
 }
 
@@ -106,8 +112,9 @@ h2 {
   -webkit-text-fill-color: transparent;
   font-family: "Syne", sans-serif;
   font-weight: 800;
-  font-size: 2rem;
-  margin-right: 0.5em;
+  font-size: 4.5vw;
+  font-size: 4.5vh;
+  margin-right: 1.18%;
 }
 
 .linkedin {
@@ -115,8 +122,9 @@ h2 {
   -webkit-text-fill-color: transparent;
   font-family: "Syne", sans-serif;
   font-weight: 800;
-  font-size: 2rem;
-  margin-left: 0.5em;
+  font-size: 4.5vw;
+  font-size: 4.5vh;
+  margin-left: 1.18%;
 }
 
 /*Project Image CSS*/
@@ -124,15 +132,15 @@ h2 {
 .screenshot {
   height: auto;
   width: auto;
-  max-width: 19em;
-  max-height: 19em;
+  max-width: 100%;
+  max-height: 100%;
   border-radius: 0.5em;
 }
 
 .img-overlay {
   border-radius: 0.5em;
   position: relative;
-  width: 19em;
+  width: 19%;
   margin: auto;
 }
 
@@ -155,7 +163,8 @@ h2 {
 .text {
   font-family: "Roboto Mono", monospace;
   text-decoration: underline;
-  font-size: 1rem;
+  font-size: 2.7vw;
+  font-size: 2.7vh;
   position: absolute;
   top: 50%;
   left: 50%;
