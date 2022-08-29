@@ -61,43 +61,45 @@ h2 {
 }
 
 .intro {
-  font-size: 7vw;
-  font-size: 18vh;
+  font-size: 5vw;
+  font-size: 15vh;
   display: inline-block;
-  margin-top: 14%;
+  margin-top: 16%;
+  margin-right: 20%;
+  margin-left: 20%;
 }
 
 .about {
-  font-size: 13.5vw;
-  font-size: 13.5vh;
+  font-size: 11vw;
+  font-size: 11vh;
   display: inline-block;
   margin-top: 18%;
 }
 
 .abouttext {
-  font-size: 10.2vw;
-  font-size: 10.2vh;
+  font-size: 8vw;
+  font-size: 8vh;
   display: inline-block;
   margin-left: 10%;
   margin-right: 10%;
 }
 
 .projects {
-  font-size: 13.5vw;
-  font-size: 13.5vh;
+  font-size: 11vw;
+  font-size: 11vh;
   display: inline-block;
   margin-top: 16%;
 }
 
 .more {
-  font-size: 2.7vw;
-  font-size: 2.7vh;
+  font-size: 2vw;
+  font-size: 2vh;
   display: inline-block;
 }
 
 .connect {
-  font-size: 13.5vw;
-  font-size: 13.5vh;
+  font-size: 11vw;
+  font-size: 11vh;
   display: inline-block;
   margin-top: 16%;
 }
@@ -112,8 +114,8 @@ h2 {
   -webkit-text-fill-color: transparent;
   font-family: "Syne", sans-serif;
   font-weight: 800;
-  font-size: 4.5vw;
-  font-size: 4.5vh;
+  font-size: 4vw;
+  font-size: 4vh;
   margin-right: 1.18%;
 }
 
@@ -122,8 +124,8 @@ h2 {
   -webkit-text-fill-color: transparent;
   font-family: "Syne", sans-serif;
   font-weight: 800;
-  font-size: 4.5vw;
-  font-size: 4.5vh;
+  font-size: 4vw;
+  font-size: 4vh;
   margin-left: 1.18%;
 }
 
