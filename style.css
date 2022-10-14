@@ -11,16 +11,15 @@
   a {
     background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(91, 91, 91));
   }
-  .text {
-    color: rgb(0, 0, 0);
-  }
-  .overlay {
-    background-color: #fff;
-  }
 }
 @media (prefers-color-scheme: dark) {
   body {
-    background: #0f0f10;
+    background: linear-gradient(270deg, #1f2830, #121a21, #121a21 58%);
+    background: -webkit-linear-gradient(
+      to right,
+      #212b35,
+      #121a21
+    ); /* Chrome 10-25, Safari 5.1-6 */
   }
   h1 {
     background: -webkit-linear-gradient(#eee, rgb(144, 144, 144));
@@ -30,12 +29,6 @@
   }
   a {
     background: -webkit-linear-gradient(#eee, rgb(181, 181, 181));
-  }
-  .text {
-    color: white;
-  }
-  .overlay {
-    background-color: #0f0f10;
   }
 }
 
@@ -51,126 +44,43 @@ h2 {
   -webkit-text-fill-color: transparent;
   font-family: "DM Sans", sans-serif;
   text-align: center;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 
-.githubsmall {
+a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "Syne", sans-serif;
-  font-weight: 800;
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
 }
 
 .intro {
-  font-size: 5vw;
-  font-size: 15vh;
-  display: inline-block;
-  margin-top: 30vh;
-  margin-right: 20%;
-  margin-left: 20%;
-}
-
-.about {
-  font-size: 11vw;
-  font-size: 11vh;
-  display: inline-block;
-  margin-top: 35vh;
-}
-
-.abouttext {
-  font-size: 8vw;
-  font-size: 8vh;
-  display: inline-block;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.projects {
-  font-size: 11vw;
-  font-size: 11vh;
-  display: inline-block;
-  margin-top: 35vh;
-}
-
-.more {
-  font-size: 2vw;
-  font-size: 2vh;
-  display: inline-block;
-}
-
-.connect {
-  font-size: 11vw;
-  font-size: 11vh;
-  display: inline-block;
-  margin-top: 35vh;
+  font-size: 14vh;
 }
 
 .container {
   margin-bottom: 1.75%;
   text-align: center;
+  font-size: 6vh;
 }
 
-.github {
+.golang {
+  background: -webkit-linear-gradient(rgb(10, 160, 201), rgb(2, 203, 239));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "Syne", sans-serif;
-  font-weight: 800;
-  font-size: 4vw;
-  font-size: 4vh;
-  margin-right: 1.18%;
-}
-
-.linkedin {
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "Syne", sans-serif;
-  font-weight: 800;
-  font-size: 4vw;
-  font-size: 4vh;
-  margin-left: 1.18%;
-}
-
-/*Project Image CSS*/
-
-.screenshot {
-  height: auto;
-  width: auto;
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 0.5em;
-}
-
-.img-overlay {
-  border-radius: 0.5em;
-  position: relative;
-  width: 19%;
-  margin: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-}
-
-.img-overlay:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  font-family: "Roboto Mono", monospace;
-  text-decoration: underline;
-  font-size: 2.7vw;
-  font-size: 2.7vh;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  font-family: "DM Sans", sans-serif;
   text-align: center;
+}
+
+.abouttext {
+  font-size: 6.5vh;
+}
+
+.connect {
+  font-size: 9vh;
+}
+
+.about {
+  font-size: 9vh;
 }
