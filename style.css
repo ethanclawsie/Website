@@ -15,11 +15,9 @@
 @media (prefers-color-scheme: dark) {
   body {
     background: linear-gradient(270deg, #1f2830, #121a21, #121a21 58%);
-    background: -webkit-linear-gradient(
-      to right,
-      #212b35,
-      #121a21
-    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #212b35, #121a21);
+    max-width: 100%;
+    max-height: 100%;
   }
   h1 {
     background: -webkit-linear-gradient(#eee, rgb(144, 144, 144));
