@@ -18,6 +18,13 @@
   a {
     background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(75, 75, 75));
   }
+  .golang {
+    background: -webkit-linear-gradient(rgb(10, 160, 201), rgb(2, 203, 239));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
+  }
 }
 @media (prefers-color-scheme: dark) {
   body {
@@ -38,6 +45,13 @@
   }
   a {
     background: -webkit-linear-gradient(#eee, rgb(202, 202, 202));
+  }
+  .golang {
+    background: -webkit-linear-gradient(rgb(2, 203, 239), rgb(10, 160, 201));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
   }
 }
 
@@ -72,14 +86,6 @@ a {
   margin-bottom: 1.75%;
   text-align: center;
   font-size: 6vh;
-}
-
-.golang {
-  background: -webkit-linear-gradient(rgb(10, 160, 201), rgb(2, 203, 239));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "DM Sans", sans-serif;
-  text-align: center;
 }
 
 .abouttext {
