@@ -21,8 +21,6 @@
 }
 @media (prefers-color-scheme: dark) {
   body {
-    max-width: 100%;
-    height: auto;
     background-color: black;
   }
   h1 {
