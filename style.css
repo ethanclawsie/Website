@@ -1,13 +1,6 @@
 @media (prefers-color-scheme: light) {
   body {
-    background-image: linear-gradient(
-      to top,
-      #c9c9c9,
-      #cfcfcf,
-      #d5d5d5,
-      #dbdbdb,
-      #e1e1e1
-    );
+    background-color: rgb(235, 235, 235);
   }
   h1 {
     background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(75, 75, 75));
@@ -28,14 +21,7 @@
 }
 @media (prefers-color-scheme: dark) {
   body {
-    background-image: linear-gradient(
-      to top,
-      #1f1f1f,
-      #1b1b1b,
-      #181818,
-      #141414,
-      #0f0f0f
-    );
+    background-color: black;
   }
   h1 {
     background: -webkit-linear-gradient(#eee, rgb(202, 202, 202));
