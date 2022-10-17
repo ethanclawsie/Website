@@ -65,20 +65,25 @@ a {
 }
 
 .intro {
+  font-size: 5rem;
   margin-left: 2%;
   margin-right: 2%;
 }
 
 .container {
+  font-size: 3rem;
   text-align: center;
   margin-bottom: 1%;
 }
 
 .abouttext {
+  font-size: 3rem;
 }
 
 .connect {
+  font-size: 3rem;
 }
 
 .about {
+  font-size: 3rem;
 }
