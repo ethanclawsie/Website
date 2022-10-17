@@ -1,13 +1,6 @@
 @media (prefers-color-scheme: light) {
   body {
-    background-image: linear-gradient(
-      to top,
-      #c9c9c9,
-      #cfcfcf,
-      #d5d5d5,
-      #dbdbdb,
-      #e1e1e1
-    );
+    background-color: #fff;
   }
   h1 {
     background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(75, 75, 75));
@@ -28,6 +21,8 @@
 }
 @media (prefers-color-scheme: dark) {
   body {
+    max-width: 100%;
+    height: auto;
     background-color: black;
   }
   h1 {
