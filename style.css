@@ -87,23 +87,40 @@ a {
 .about {
   font-size: 4.2rem;
 }
-/* Implement media queries for device size */
+
+@media screen and (max-width: 800px) {
+  .intro {
+    font-size: 6rem;
+  }
+  .container {
+    font-size: 4rem;
+  }
+  .abouttext {
+    font-size: 4rem;
+  }
+  .connect {
+    font-size: 5.2rem;
+  }
+  .about {
+    font-size: 5.2rem;
+  }
+}
 
 @media screen and (max-width: 600px) {
   .intro {
     font-size: 4rem;
   }
   .container {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .abouttext {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .connect {
-    font-size: 3rem;
+    font-size: 3.2rem;
   }
   .about {
-    font-size: 3rem;
+    font-size: 3.2rem;
   }
 }
 
@@ -118,10 +135,10 @@ a {
     font-size: 1.5rem;
   }
   .connect {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   .about {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -136,9 +153,9 @@ a {
     font-size: 1rem;
   }
   .connect {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .about {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
