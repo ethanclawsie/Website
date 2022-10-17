@@ -87,3 +87,58 @@ a {
 .about {
   font-size: 4.2rem;
 }
+/* Implement media queries for device size */
+
+@media screen and (max-width: 600px) {
+  .intro {
+    font-size: 4rem;
+  }
+  .container {
+    font-size: 2rem;
+  }
+  .abouttext {
+    font-size: 2rem;
+  }
+  .connect {
+    font-size: 3rem;
+  }
+  .about {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .intro {
+    font-size: 3rem;
+  }
+  .container {
+    font-size: 1.5rem;
+  }
+  .abouttext {
+    font-size: 1.5rem;
+  }
+  .connect {
+    font-size: 2rem;
+  }
+  .about {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .intro {
+    font-size: 2rem;
+  }
+  .container {
+    font-size: 1rem;
+  }
+  .abouttext {
+    font-size: 1rem;
+  }
+  .connect {
+    font-size: 1.5rem;
+  }
+  .about {
+    font-size: 1.5rem;
+  }
+}
