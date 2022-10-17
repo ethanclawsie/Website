@@ -28,14 +28,7 @@
 }
 @media (prefers-color-scheme: dark) {
   body {
-    background-image: linear-gradient(
-      to top,
-      #1f1f1f,
-      #1b1b1b,
-      #181818,
-      #141414,
-      #0f0f0f
-    );
+    background-color: black;
   }
   h1 {
     background: -webkit-linear-gradient(#eee, rgb(202, 202, 202));
@@ -79,23 +72,25 @@ a {
 }
 
 .intro {
-  font-size: 14vh;
+  margin-left: 2%;
+  margin-right: 2%;
+  font-size: 3.8em;
 }
 
 .container {
-  margin-bottom: 1.75%;
+  font-size: 3.3em;
   text-align: center;
-  font-size: 6vh;
+  margin-bottom: 1%;
 }
 
 .abouttext {
-  font-size: 6.5vh;
+  font-size: 2.7em;
 }
 
 .connect {
-  font-size: 9vh;
+  font-size: 2.8em;
 }
 
 .about {
-  font-size: 9vh;
+  font-size: 2.8em;
 }
