@@ -162,19 +162,19 @@ a {
 
 @media screen and (max-width: 1500px) {
   .intro {
-    font-size: 7rem;
+    font-size: 5.4rem;
   }
   .container {
-    font-size: 4.5rem;
+    font-size: 2.8rem;
   }
   .abouttext {
-    font-size: 5rem;
+    font-size: 3rem;
   }
   .connect {
-    font-size: 5.5rem;
+    font-size: 3.65rem;
   }
   .about {
-    font-size: 5.5rem;
+    font-size: 3.65rem;
   }
 }
 
