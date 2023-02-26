@@ -66,6 +66,10 @@ a {
   font-size: 3rem;
 }
 
+.description {
+  font-size: 3rem;
+}
+
 .connect {
   font-size: 4.2rem;
 }
@@ -83,6 +87,9 @@ a {
   }
   .abouttext {
     font-size: 10rem;
+  }
+  .description {
+    font-size: 7.5rem;
   }
   .connect {
     font-size: 12rem;
@@ -102,6 +109,9 @@ a {
   .abouttext {
     font-size: 8.8rem;
   }
+  .description {
+    font-size: 5.37rem;
+  }
   .connect {
     font-size: 10.1rem;
   }
@@ -119,6 +129,9 @@ a {
   }
   .abouttext {
     font-size: 7.54rem;
+  }
+  .description {
+    font-size: 4.95rem;
   }
   .connect {
     font-size: 8.7rem;
@@ -138,6 +151,9 @@ a {
   .abouttext {
     font-size: 6.3rem;
   }
+  .description {
+    font-size: 4.06rem;
+  }
   .connect {
     font-size: 7.25rem;
   }
@@ -155,6 +171,9 @@ a {
   }
   .abouttext {
     font-size: 3rem;
+  }
+  .description {
+    font-size: 2.38rem;
   }
   .connect {
     font-size: 3.65rem;
@@ -174,6 +193,9 @@ a {
   .abouttext {
     font-size: 3.33rem;
   }
+  .description {
+    font-size: 1.98rem;
+  }
   .connect {
     font-size: 3.7rem;
   }
@@ -191,6 +213,9 @@ a {
   }
   .abouttext {
     font-size: 2.7rem;
+  }
+  .description {
+    font-size: 2.25rem;
   }
   .connect {
     font-size: 3rem;
@@ -210,6 +235,9 @@ a {
   .abouttext {
     font-size: 2rem;
   }
+  .description {
+    font-size: 1.35rem;
+  }
   .connect {
     font-size: 2.3rem;
   }
@@ -228,6 +256,9 @@ a {
   .abouttext {
     font-size: 1.9rem;
   }
+  .description {
+    font-size: 1.12rem;
+  }
   .connect {
     font-size: 2.3rem;
   }
@@ -245,6 +276,9 @@ a {
   }
   .abouttext {
     font-size: 1rem;
+  }
+  .description {
+    font-size: 0.75rem;
   }
   .connect {
     font-size: 1.2rem;
