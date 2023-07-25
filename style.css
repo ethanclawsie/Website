@@ -30,7 +30,7 @@
 h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "Syne", sans-serif;
+  font-family: "DM Sans", sans-serif;
   text-align: center;
 }
 
@@ -51,6 +51,7 @@ a {
 }
 
 .intro {
+  font-family: "Syne", sans-serif;
   font-size: 5rem;
   margin-left: 2%;
   margin-right: 2%;
