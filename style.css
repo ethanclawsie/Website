@@ -27,6 +27,37 @@
   }
 }
 
+.skills-section {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+}
+
+.skills-container {
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+}
+
+.category {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.skills-list {
+  font-size: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  color: white;
+  margin: 5px;
+}
+
 h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
