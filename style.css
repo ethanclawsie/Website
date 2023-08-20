@@ -25,10 +25,12 @@
   a {
     background: -webkit-linear-gradient(#eee, rgb(202, 202, 202));
   }
+  .skills-container {
+    background: -webkit-linear-gradient(#eee, rgb(202, 202, 202));
+  }
 }
 
 .skills-section {
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,6 +39,8 @@
 }
 
 .skills-container {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: "DM Sans", sans-serif;
   text-align: center;
 }
@@ -54,7 +58,6 @@
 }
 
 .skill {
-  color: white;
   margin: 5px;
 }
 
@@ -129,6 +132,14 @@ a {
   .about {
     font-size: 3.77rem;
   }
+
+  .skills-list {
+    font-size: 2.46rem;
+  }
+
+  .category {
+    font-size: 2.96rem;
+  }
 }
 
 @media screen and (max-width: 1500px) {
@@ -149,6 +160,14 @@ a {
   }
   .about {
     font-size: 3.65rem;
+  }
+
+  .skills-list {
+    font-size: 2.38rem;
+  }
+
+  .category {
+    font-size: 2.8rem;
   }
 }
 
@@ -171,6 +190,14 @@ a {
   .about {
     font-size: 3.7rem;
   }
+
+  .skills-list {
+    font-size: 1.98rem;
+  }
+
+  .category {
+    font-size: 3rem;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -191,6 +218,14 @@ a {
   }
   .about {
     font-size: 3rem;
+  }
+
+  .skills-list {
+    font-size: 2.25rem;
+  }
+
+  .category {
+    font-size: 2.4rem;
   }
 }
 
@@ -213,6 +248,13 @@ a {
   .about {
     font-size: 2.3rem;
   }
+  .skills-list {
+    font-size: 1.35rem;
+  }
+
+  .category {
+    font-size: 1.8rem;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -234,6 +276,13 @@ a {
   .about {
     font-size: 2.3rem;
   }
+  .skills-list {
+    font-size: 1.12rem;
+  }
+
+  .category {
+    font-size: 1.6rem;
+  }
 }
 
 @media screen and (max-width: 300px) {
@@ -254,5 +303,12 @@ a {
   }
   .about {
     font-size: 1.2rem;
+  }
+  .skills-list {
+    font-size: 0.75rem;
+  }
+
+  .category {
+    font-size: 1rem;
   }
 }
