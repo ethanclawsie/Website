@@ -11,6 +11,9 @@
   a {
     background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(75, 75, 75));
   }
+  .skills-container {
+    background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(75, 75, 75));
+  }
 }
 @media (prefers-color-scheme: dark) {
   body {
