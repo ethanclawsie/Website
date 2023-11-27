@@ -1,36 +1,17 @@
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: rgb(235, 235, 235);
-  }
-  h1 {
-    background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(75, 75, 75));
-  }
-  h2 {
-    background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(75, 75, 75));
-  }
-  a {
-    background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(75, 75, 75));
-  }
-  .skills-container {
-    background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(75, 75, 75));
-  }
+body {
+  background-color: #1d1d1d;
 }
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: black;
-  }
-  h1 {
-    background: -webkit-linear-gradient(#eee, rgb(202, 202, 202));
-  }
-  h2 {
-    background: -webkit-linear-gradient(#eee, rgb(202, 202, 202));
-  }
-  a {
-    background: -webkit-linear-gradient(#eee, rgb(202, 202, 202));
-  }
-  .skills-container {
-    background: -webkit-linear-gradient(#eee, rgb(202, 202, 202));
-  }
+h1 {
+  background: -webkit-linear-gradient(#eee, rgb(202, 202, 202));
+}
+h2 {
+  background: -webkit-linear-gradient(#eee, rgb(202, 202, 202));
+}
+a {
+  background: -webkit-linear-gradient(#eee, rgb(202, 202, 202));
+}
+.skills-container {
+  background: -webkit-linear-gradient(#eee, rgb(202, 202, 202));
 }
 
 .skills-section {
