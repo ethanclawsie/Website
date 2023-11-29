@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ethan Clawsie 👋</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <meta
       name="description"
       content="Computer Science major at Santa Clara University. I'm interested in back-end development and artificial intelligence."
@@ -23,110 +21,109 @@
     <meta name="theme-color" content="1d1d1d" />
   </head>
   <body>
-    <h1><span class="intro">Hi, I'm Ethan Clawsie</span></h1>
-    <h2>
-      <span class="abouttext">
+    <section id="intro">
+      <h1>Hi, I'm Ethan Clawsie</h1>
+      <p>
         I'm a 19 year old student Computer Science major currently studying at
         Santa Clara University. I'm interested in back-end development,
         cybersecurity, and artificial intelligence.
-      </span>
-    </h2>
-    <h1 class="connect">Skills</h1>
-    <div class="skills-section">
-      <div class="skills-container">
-        <div class="category">Programming Languages:</div>
-        <div class="skills-list">
-          <div class="skill">C++</div>
-          <div class="skill">Go</div>
-          <div class="skill">Java</div>
-          <div class="skill">JavaScript</div>
-          <div class="skill">Dart</div>
-          <div class="skill">Python</div>
-          <div class="skill">HTML</div>
-          <div class="skill">CSS</div>
-        </div>
+      </p>
+    </section>
 
-        <div class="category">Tools:</div>
-        <div class="skills-list">
-          <div class="skill">Chrome Extension Development</div>
-          <div class="skill">Git</div>
-          <div class="skill">GitHub</div>
-          <div class="skill">SQL</div>
-          <div class="skill">SQLite</div>
-          <div class="skill">PostgreSQL</div>
-          <div class="skill">Linux</div>
-        </div>
-
-        <div class="category">Frameworks:</div>
-        <div class="skills-list">
-          <div class="skill">Tensorflow</div>
-          <div class="skill">Express.js</div>
-          <div class="skill">Flask</div>
-          <div class="skill">Node.js</div>
-          <div class="skill">Flutter</div>
-        </div>
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <h3>Languages</h3>
+      <div id="programming-languages">
+        <img src="icons/cpp.svg" alt="C++" title="C++" />
+        <img src="icons/css.svg" alt="CSS" title="CSS" />
+        <img src="icons/dart.svg" alt="Dart" title="Dart" />
+        <img src="icons/go.svg" alt="Go" title="Go" />
+        <img src="icons/html.svg" alt="HTML" title="HTML" />
+        <img src="icons/java.svg" alt="Java" title="Java" />
+        <img
+          src="icons/javascript.svg"
+          alt="Javascript"
+          width="40"
+          height="40"
+          title="Javascript"
+        />
+        <img src="icons/python.svg" alt="Python" title="Python" />
       </div>
-    </div>
-    <h1><span class="connect">Projects</span></h1>
-    <div class="container">
-      <a class="email" href="https://github.com/ethanclawsie/YouRaterClient"
-        >YouRater</a
-      >
-    </div>
-    <h2>
-      <span class="description">
-        Extension that provides more in-depth options to reviewing videos on
-        YouTube
-      </span>
-    </h2>
-    <div class="container">
-      <a class="email" href="https://github.com/ethanclawsie/Learn">Learn</a>
-    </div>
-    <h2>
-      <span class="description">
-        Command-line application designed to help users learn and memorize terms
-        efficiently
-      </span>
-    </h2>
-    <div class="container">
-      <a class="github" href="https://github.com/ethanclawsie/DermAI">DermAI</a>
-    </div>
-    <h2>
-      <span class="description">
-        Online AI dermatologist created for Hack for Humanity 2023
-      </span>
-    </h2>
-    <div class="container">
-      <a class="github" href="https://github.com/ethanclawsie/Carbon">Carbon</a>
-    </div>
-    <h2>
-      <span class="description">
-        Gamifying eco-friendliness using the INRIX API
-      </span>
-    </h2>
-    <div class="container">
-      <a class="github" href="https://github.com/ethanclawsie/PyStocks"
-        >PyStocks</a
-      >
-    </div>
-    <h2>
-      <span class="description">
-        View important portfolio information and compare portfolios
-      </span>
-    </h2>
-    <h1><span class="connect">Connect</span></h1>
-    <div class="container">
-      <a class="email" href="mailto:ethanclawsie@gmail.com">Email</a>
-      <a
-        class="linkedin"
-        href="https://www.linkedin.com/in/ethanclawsie/"
-        target="_blank"
-        >Linkedin</a
-      >
-      <a class="github" href="https://github.com/ethanclawsie" target="_blank"
-        >Github</a
-      >
-      <a class="github" href="ethanclawsieresume.pdf" target="_blank">Resume</a>
-    </div>
+      <div id="tools">
+        <h3>Tools</h3>
+        <img
+          src="icons/chrome.svg"
+          alt="Chrome Extension Development"
+          width="40"
+          height="40"
+          title="Chrome Extension Development"
+        />
+        <img src="icons/git.svg" alt="Git" title="Git" />
+        <img src="icons/linux.svg" alt="Linux" title="Linux" />
+        <img src="icons/postgres.svg" alt="PostgreSQL" title="PostgreSQL" />
+        <img src="icons/download-3.svg" alt="Sqlite" title="Sqlite" />
+      </div>
+      <div id="frameworks">
+        <h3>Frameworks</h3>
+        <img src="icons/download.svg" alt="Express" title="Express" />
+        <img src="icons/download-2.svg" alt="Flask" title="Flask" />
+        <img src="icons/flutter.svg" alt="Flutter" title="Flutter" />
+        <img src="icons/node.svg" alt="Node" title="Node" />
+
+        <img
+          src="icons/tensorflow.svg"
+          alt="Tensorflow"
+          width="40"
+          height="40"
+          title="Tensorflow"
+        />
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <!-- Repeat this structure for each project -->
+      <div class="project">
+        <a href="[https://github.com/ethanclawsie/YouRaterClient"
+          ><h3>YouRater</h3></a
+        >
+        <p>
+          Extension that provides more in-depth options to reviewing videos on
+          YouTube
+        </p>
+      </div>
+      <div class="project">
+        <a href="https://github.com/ethanclawsie/DermAI"><h3>DermAI</h3></a>
+        <p>Online AI dermatologist created for Hack for Humanity 2023</p>
+      </div>
+      <div class="project">
+        <a href="https://github.com/ethanclawsie/Carbon"><h3>Carbon</h3></a>
+        <p>Gamifying eco-friendliness using the INRIX API</p>
+      </div>
+      <div class="project">
+        <a href="https://github.com/ethanclawsie/Learn"><h3>Learn</h3></a>
+        <p>
+          Command-line application designed to help users learn and memorize
+          terms efficiently
+        </p>
+      </div>
+      <div class="project">
+        <a href="https://github.com/ethanclawsie/PyStocks"><h3>PyStocks</h3></a>
+        <p>View important portfolio information and compare portfolios</p>
+      </div>
+    </section>
+
+    <!-- Connect Section -->
+    <section id="connect">
+      <h2>Connect</h2>
+      <div class="connect-links">
+        <a href="mailto:ethanclawsie@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/ethanclawsie">LinkedIn</a>
+        <a href="https://github.com/ethanclawsie">GitHub</a>
+        <a href="ethanclawsieresume.pdf">Resume</a>
+      </div>
+    </section>
   </body>
 </html>

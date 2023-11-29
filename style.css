@@ -1,298 +1,83 @@
 body {
-  background-color: #1d1d1d;
-}
-h1 {
-  background: -webkit-linear-gradient(#eee, rgb(202, 202, 202));
-}
-h2 {
-  background: -webkit-linear-gradient(#eee, rgb(202, 202, 202));
-}
-a {
-  background: -webkit-linear-gradient(#eee, rgb(202, 202, 202));
-}
-.skills-container {
-  background: -webkit-linear-gradient(#eee, rgb(202, 202, 202));
-}
-
-.skills-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: #1d1d1d; /* Dark grey background */
+  color: white;
   margin: 0;
-  font-family: "DM Sans", sans-serif;
+  padding: 0;
 }
 
-.skills-container {
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "DM Sans", sans-serif;
+section {
+  padding: 3%;
   text-align: center;
 }
 
-.category {
-  font-size: 3rem;
-  font-weight: bold;
+section h2 {
+  font-size: xx-large;
+  margin-bottom: 20px;
 }
 
-.skills-list {
-  font-size: 2rem;
+#intro {
+  max-width: 600px; /* Maximum width of the bio section */
+  margin: auto; /* This centers the bio section */
+  padding: 50px;
+}
+
+#intro h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#intro p {
+  line-height: 1.6; /* Improves readability */
+}
+
+.project {
+  margin-bottom: 30px;
+}
+
+.project h3 {
+  color: #ffffff; /* Some color for clickable titles */
+  margin: 0;
+}
+
+.project a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+.connect-links {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  gap: 20px; /* Adjust the space between links as needed */
 }
 
-.skill {
-  margin: 5px;
+.connect-links a {
+  color: #ffffff; /* Color for the links */
+  text-decoration: none;
 }
 
-h1 {
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "DM Sans", sans-serif;
+.connect-links a:hover {
+  text-decoration: underline;
+}
+
+/* Media query for small devices (phones) */
+@media screen and (min-width: 980px) and (max-width: 1000px) {
+  .connect-links a {
+    font-size: 2em; /* Larger font size for small devices */
+  }
+}
+
+.icon {
+  display: inline-block;
   text-align: center;
+  margin: 1px;
 }
 
-h2 {
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "DM Sans", sans-serif;
-  text-align: center;
-  margin-left: 8%;
-  margin-right: 8%;
-}
-
-a {
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "DM Sans", sans-serif;
-  text-align: center;
-}
-
-.intro {
-  font-family: "Syne", sans-serif;
-  font-size: 5rem;
-  margin-left: 2%;
-  margin-right: 2%;
-}
-
-.container {
-  font-size: 3rem;
-  text-align: center;
-  margin-bottom: 1%;
-}
-
-.abouttext {
-  font-size: 3rem;
-}
-
-.description {
-  font-size: 3rem;
-}
-
-.connect {
-  font-size: 4.2rem;
-}
-
-.about {
-  font-size: 4.2rem;
-}
-
-@media screen and (max-width: 2500px) {
-  .intro {
-    font-size: 4.56rem;
-  }
-  .container {
-    font-size: 2.96rem;
-  }
-  .abouttext {
-    font-size: 4.1rem;
-  }
-  .description {
-    font-size: 2.46rem;
-  }
-  .connect {
-    font-size: 3.77rem;
-  }
-  .about {
-    font-size: 3.77rem;
-  }
-
-  .skills-list {
-    font-size: 2.46rem;
-  }
-
-  .category {
-    font-size: 2.96rem;
-  }
-}
-
-@media screen and (max-width: 1500px) {
-  .intro {
-    font-size: 5.4rem;
-  }
-  .container {
-    font-size: 2.8rem;
-  }
-  .abouttext {
-    font-size: 3rem;
-  }
-  .description {
-    font-size: 2.38rem;
-  }
-  .connect {
-    font-size: 3.65rem;
-  }
-  .about {
-    font-size: 3.65rem;
-  }
-
-  .skills-list {
-    font-size: 2.38rem;
-  }
-
-  .category {
-    font-size: 2.8rem;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .intro {
-    font-size: 4.7rem;
-  }
-  .container {
-    font-size: 3rem;
-  }
-  .abouttext {
-    font-size: 3.33rem;
-  }
-  .description {
-    font-size: 1.98rem;
-  }
-  .connect {
-    font-size: 3.7rem;
-  }
-  .about {
-    font-size: 3.7rem;
-  }
-
-  .skills-list {
-    font-size: 1.98rem;
-  }
-
-  .category {
-    font-size: 3rem;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .intro {
-    font-size: 3.76rem;
-  }
-  .container {
-    font-size: 2.4rem;
-  }
-  .abouttext {
-    font-size: 2.7rem;
-  }
-  .description {
-    font-size: 2.25rem;
-  }
-  .connect {
-    font-size: 3rem;
-  }
-  .about {
-    font-size: 3rem;
-  }
-
-  .skills-list {
-    font-size: 2.25rem;
-  }
-
-  .category {
-    font-size: 2.4rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .intro {
-    font-size: 2.8rem;
-  }
-  .container {
-    font-size: 1.8rem;
-  }
-  .abouttext {
-    font-size: 2rem;
-  }
-  .description {
-    font-size: 1.35rem;
-  }
-  .connect {
-    font-size: 2.3rem;
-  }
-  .about {
-    font-size: 2.3rem;
-  }
-  .skills-list {
-    font-size: 1.35rem;
-  }
-
-  .category {
-    font-size: 1.8rem;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .intro {
-    font-size: 2.7rem;
-  }
-  .container {
-    font-size: 1.6rem;
-  }
-  .abouttext {
-    font-size: 1.9rem;
-  }
-  .description {
-    font-size: 1.12rem;
-  }
-  .connect {
-    font-size: 2.3rem;
-  }
-  .about {
-    font-size: 2.3rem;
-  }
-  .skills-list {
-    font-size: 1.12rem;
-  }
-
-  .category {
-    font-size: 1.6rem;
-  }
-}
-
-@media screen and (max-width: 300px) {
-  .intro {
-    font-size: 2rem;
-  }
-  .container {
-    font-size: 1rem;
-  }
-  .abouttext {
-    font-size: 1rem;
-  }
-  .description {
-    font-size: 0.75rem;
-  }
-  .connect {
-    font-size: 1.2rem;
-  }
-  .about {
-    font-size: 1.2rem;
-  }
-  .skills-list {
-    font-size: 0.75rem;
-  }
-
-  .category {
-    font-size: 1rem;
-  }
+img {
+  width: 80px;
+  height: 80px;
 }
