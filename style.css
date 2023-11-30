@@ -69,6 +69,9 @@ section h2 {
   .connect-links a {
     font-size: 2em; /* Larger font size for small devices */
   }
+  p {
+    font-size: 2em;
+  }
 }
 
 .icon {
