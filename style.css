@@ -65,12 +65,14 @@ section h2 {
 }
 
 /* Media query for small devices (phones) */
-@media screen and (min-width: 980px) and (max-width: 1000px) {
+@media screen and (min-width: 980px) and (max-width: 1300px) {
   .connect-links a {
     font-size: 2em; /* Larger font size for small devices */
+    color: aqua;
   }
   p {
     font-size: 2em;
+    color: aqua;
   }
 }
 
