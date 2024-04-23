@@ -1,104 +1,61 @@
+/* This applies to the entire body of the page, centering text and flex items */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #1d1d1d; /* Dark grey background */
-  color: white;
-  margin: 0;
-  padding: 0;
-}
-
-section {
-  padding: 3%;
-  text-align: center;
-}
-
-section h2 {
-  font-size: xx-large;
-  margin-bottom: 20px;
-}
-
-#intro {
-  max-width: 600px; /* Maximum width of the bio section */
-  margin: auto; /* This centers the bio section */
-  padding: 50px;
-}
-
-#intro h1 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-#intro p {
-  line-height: 1.6; /* Improves readability */
-}
-
-.project {
-  margin-bottom: 30px;
-}
-
-.project h3 {
-  color: #ffffff; /* Some color for clickable titles */
-  margin: 0;
-}
-
-.project a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.project a:hover {
-  text-decoration: underline;
-}
-
-.connect-links {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  gap: 20px; /* Adjust the space between links as needed */
+  text-align: center;
+  margin: 0;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-family: Arial, sans-serif;
 }
 
-.connect-links a {
-  color: #ffffff; /* Color for the links */
+h4 {
+  font-weight: lighter;
+  text-align: center;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+}
+
+h3 {
   text-decoration: none;
 }
 
-.connect-links a:hover {
-  text-decoration: underline;
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0.9em; /* Reduces the top margin */
+  margin-bottom: 0.9em; /* Reduces the bottom margin */
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
-/* Media query for small devices (phones) */
-@media screen and (min-width: 980px) and (max-width: 1300px) {
-  .connect-links a {
-    font-size: 2em; /* Larger font size for small devices */
-  }
-
-  p {
-    font-size: 1.8em;
-  }
-
-  h1 {
-    font-size: 2.7em;
-  }
-
-  h2 {
-    font-size: 2.5em;
-  }
-
-  h3 {
-    font-size: 2em;
-  }
-
-  img {
-    width: 90px;
-    height: 90px;
-  }
+/* Styles for the links container */
+.links {
+  display: flex;
+  justify-content: center; /* This will center all the items inside the container */
+  align-items: center;
+  width: auto; /* Let it grow as needed, or set a specific max-width */
+  padding: 10px; /* Optional: Adds padding inside the container */
+  margin: 0 auto; /* This ensures the container itself is centered horizontally */
 }
 
-.icon {
-  display: inline-block;
-  text-align: center;
-  margin: 1px;
+/* Styling each link */
+.links a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  padding: 10px;
 }
 
-img {
-  width: 80px;
-  height: 80px;
+.links a:hover {
+  color: #747474;
 }
