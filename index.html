@@ -127,10 +127,28 @@
       <a href="https://github.com/ethanclawsie" target="_blank">GitHub</a>
       <a href="ethanclawsieresume.pdf" target="_blank">Resume</a>
     </div>
-   <script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+<script>
+  window.getIP = function(response) {
+    const visitInfo = {
+      ip: response.ip,
+      timestamp: new Date().toISOString(),
+    };
+
+    window.logVisit = function(db) {
+      const analyticsRef = firebase.firestore().collection("analytics");
+      analyticsRef.add(visitInfo)
+        .then(() => console.log("Visit logged in Firestore"))
+        .catch(error => console.error("Error adding visit:", error));
+    };
+  };
+</script>
+
+<script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
-  import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js";
+  import { getFirestore } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js";
+
   const firebaseConfig = {
     apiKey: "AIzaSyC1c98AuGr7bNGEPPyc4r82HIsCYOKeCwk",
     authDomain: "personal-site-9b587.firebaseapp.com",
@@ -139,18 +157,14 @@
     messagingSenderId: "378422833033",
     appId: "1:378422833033:web:75cc98ad40b186f2dcbb58"
   };
+
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
-  window.getIP = function(response) {
-    const visitInfo = {
-      ip: response.ip,
-      timestamp: new Date().toISOString(),
-    };
-    const analyticsRef = collection(db, "analytics");
-    addDoc(analyticsRef, visitInfo)
-      .then(() => console.log("Visit logged in Firestore"))
-      .catch(error => console.error("Error adding visit:", error));
-  };
+
+  if (window.logVisit) {
+    window.logVisit(db);
+  }
 </script>
+
   </body>
 </html>
