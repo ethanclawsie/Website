@@ -133,13 +133,7 @@
       ip: response.ip,
       timestamp: new Date().toISOString(),
     };
-
-    window.logVisit = function(db) {
-      const analyticsRef = firebase.firestore().collection("analytics");
-      analyticsRef.add(visitInfo)
-        .then(() => console.log("Visit logged in Firestore"))
-        .catch(error => console.error("Error adding visit:", error));
-    };
+    window.visitInfo = visitInfo;
   };
 </script>
 
@@ -147,7 +141,7 @@
 
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
-  import { getFirestore } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js";
+  import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js";
 
   const firebaseConfig = {
     apiKey: "AIzaSyC1c98AuGr7bNGEPPyc4r82HIsCYOKeCwk",
@@ -161,8 +155,13 @@
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
 
-  if (window.logVisit) {
-    window.logVisit(db);
+  if (window.visitInfo) {
+    const analyticsRef = collection(db, "analytics");
+    addDoc(analyticsRef, window.visitInfo)
+      .then(() => console.log("Visit logged in Firestore"))
+      .catch(error => console.error("Error adding visit:", error));
+  } else {
+    console.error("IP data not available");
   }
 </script>
 
