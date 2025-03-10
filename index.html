@@ -154,15 +154,11 @@
 
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
-
-  if (window.visitInfo) {
+<!-- User visit analytics, web crawl detection -->
+ if (window.visitInfo) {
     const analyticsRef = collection(db, "analytics");
-    addDoc(analyticsRef, window.visitInfo)
-      .then(() => console.log("Visit logged in Firestore"))
-      .catch(error => console.error("Error adding visit:", error));
-  } else {
-    console.error("IP data not available");
-  }
+    addDoc(analyticsRef, window.visitInfo).catch(error => {});
+}
 </script>
 
   </body>
