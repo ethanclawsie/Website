@@ -127,17 +127,19 @@
       <a href="https://github.com/ethanclawsie" target="_blank">GitHub</a>
       <a href="ethanclawsieresume.pdf" target="_blank">Resume</a>
     </div>
+
+<!-- User visit analytics -->
 <script>
-  window.getIP = function(response) {
+  window.getvisit = function(response) {
     const visitInfo = {
-      ip: response.ip,
+      visitor: response.ip,
       timestamp: new Date().toISOString(),
     };
     window.visitInfo = visitInfo;
   };
 </script>
 
-<script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+<script src="https://api.ipify.org?format=jsonp&callback=getvisit"></script>
 
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
@@ -154,7 +156,7 @@
 
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
-<!-- User visit analytics, web crawl detection -->
+
  if (window.visitInfo) {
     const analyticsRef = collection(db, "analytics");
     addDoc(analyticsRef, window.visitInfo).catch(error => {});
