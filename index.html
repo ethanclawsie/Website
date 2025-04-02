@@ -38,11 +38,11 @@
     <h2>Professional Experience</h2>
     <h3>MLIR Compiler Intern - Mihira AI</h3>
     <h4>
-      Led development efforts to extend the TPP-MLIR (Tensor Processing
-      Primitives) project with custom passes supporting a TOSA (Tensor Operator
-      Set Architecture) based dialect for a next-generation GPU, integrating a
-      comprehensive pipeline that enabled execution on custom architecture
-      utilizing the Renode simulator.
+      Contributed to development efforts to extend the TPP-MLIR (Tensor
+      Processing Primitives) project with custom passes supporting a TOSA
+      (Tensor Operator Set Architecture) based dialect for a next-generation
+      GPU, integrating a comprehensive pipeline that enabled execution on custom
+      architecture utilizing the Renode simulator.
     </h4>
     <h3>Freelance Pipeline Infrastructure Engineer</h3>
     <h4>
@@ -104,40 +104,43 @@
       <a href="ethanclawsieresume.pdf" target="_blank">Resume</a>
     </div>
 
-<!-- User visit analytics -->
-<script>
-  window.getvisit = function(response) {
-    const visitInfo = {
-      visitor: response.ip,
-      timestamp: new Date().toISOString(),
-    };
-    window.visitInfo = visitInfo;
-  };
-</script>
+    <!-- User visit analytics -->
+    <script>
+      window.getvisit = function (response) {
+        const visitInfo = {
+          visitor: response.ip,
+          timestamp: new Date().toISOString(),
+        };
+        window.visitInfo = visitInfo;
+      };
+    </script>
 
-<script src="https://api.ipify.org?format=jsonp&callback=getvisit"></script>
+    <script src="https://api.ipify.org?format=jsonp&callback=getvisit"></script>
 
-<script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
-  import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js";
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
+      import {
+        getFirestore,
+        collection,
+        addDoc,
+      } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js";
 
-  const firebaseConfig = {
-    apiKey: "AIzaSyC1c98AuGr7bNGEPPyc4r82HIsCYOKeCwk",
-    authDomain: "personal-site-9b587.firebaseapp.com",
-    projectId: "personal-site-9b587",
-    storageBucket: "personal-site-9b587.firebasestorage.app",
-    messagingSenderId: "378422833033",
-    appId: "1:378422833033:web:75cc98ad40b186f2dcbb58"
-  };
+      const firebaseConfig = {
+        apiKey: "AIzaSyC1c98AuGr7bNGEPPyc4r82HIsCYOKeCwk",
+        authDomain: "personal-site-9b587.firebaseapp.com",
+        projectId: "personal-site-9b587",
+        storageBucket: "personal-site-9b587.firebasestorage.app",
+        messagingSenderId: "378422833033",
+        appId: "1:378422833033:web:75cc98ad40b186f2dcbb58",
+      };
 
-  const app = initializeApp(firebaseConfig);
-  const db = getFirestore(app);
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore(app);
 
- if (window.visitInfo) {
-    const analyticsRef = collection(db, "analytics");
-    addDoc(analyticsRef, window.visitInfo).catch(error => {});
-}
-</script>
-
+      if (window.visitInfo) {
+        const analyticsRef = collection(db, "analytics");
+        addDoc(analyticsRef, window.visitInfo).catch((error) => {});
+      }
+    </script>
   </body>
 </html>
